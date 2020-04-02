@@ -1,0 +1,47 @@
+.Application{
+	-fx-pref-width: 1200.0px;
+	-fx-pref-height: 700.0px;
+	-fx-min-width: 1200.0px;
+	-fx-min-height: 700.0px;
+	-fx-max-width: 1200.0px;
+	-fx-max-height: 700.0px;
+}
+.TopPane {
+	-fx-background-color: rgb(0.0,128.0,128.0);
+	-fx-alignment: center-left;
+	-fx-spacing: 10.0px;
+}
+
+.StatusPanel{
+	-fx-background-color: rgb(0.0,128.0,128.0);
+	-fx-padding:10.0px;
+	-fx-alignment: center-left;
+	
+}
+.ContentView{
+	-fx-pref-width: 1200.0px;
+	-fx-pref-height: 500.0px;
+}
+.TitlePane{
+	-fx-alignment: center-left;
+	-fx-background-color: rgb(136.0,138.0,133.0);
+	
+}
+.TitlePane Label{
+	-fx-text-fill:rgb(255.0,255.0,255.0);
+	-fx-font-size: 20.0px;
+	
+}
+.YearPanel{
+	-fx-alignment: center-left;
+	-fx-spacing:10.0px;
+	-fx-padding:15.0px;
+	
+}
+.OnLinePanel{
+	-fx-alignment: center-left;
+	-fx-spacing: 10.0px;
+}
+.KK Button {
+	-fx-background-color: rgb(239.0,41.0,41.0)  ;
+}

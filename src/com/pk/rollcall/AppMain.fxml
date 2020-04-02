@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" styleClass="Application" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pk.rollcall.AppMain">
+	<top>
+		<HBox spacing="10.0" styleClass="TopPane" BorderPane.alignment="CENTER">
+			<children>
+				<HBox alignment="CENTER_LEFT">
+					<children>
+						<Label alignment="BOTTOM_LEFT" prefHeight="73.0" prefWidth="525.0" text="iRollCall &#10;Manage RollCalls Easily" textFill="WHITE" wrapText="true">
+							<font>
+								<Font size="22.0" />
+							</font>
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+						</Label>
+					</children>
+				</HBox>
+				<VBox fx:id="vboxHome" alignment="CENTER" onMouseClicked="#mouseClicked" prefHeight="110.0" prefWidth="130.0" spacing="2.0">
+					<children>
+						<Label fx:id="lHome" styleClass="icons" />
+						<Label layoutX="10.0" layoutY="10.0" text="Home" textFill="WHITE" />
+					</children>
+				</VBox>
+				<VBox fx:id="vboxRegistration" alignment="CENTER" layoutX="20.0" layoutY="10.0" onMouseClicked="#mouseClicked" prefHeight="110.0" prefWidth="130.0" spacing="2.0">
+					<children>
+						<Label fx:id="lRegistration" styleClass="icons" />
+						<Label layoutX="10.0" layoutY="10.0" text="Registration" textFill="WHITE" />
+					</children>
+				</VBox>
+				<VBox fx:id="vboxAddStudent" alignment="CENTER" layoutX="1100.0" layoutY="10.0" onMouseClicked="#mouseClicked" prefHeight="110.0" prefWidth="130.0" spacing="2.0">
+					<children>
+						<Label fx:id="lAddStudent" styleClass="icons" />
+						<Label layoutX="10.0" layoutY="10.0" text="Add Student" textFill="WHITE" />
+					</children>
+				</VBox>
+				<VBox fx:id="vboxViewInformation" alignment="CENTER" layoutX="1100.0" layoutY="10.0" onMouseClicked="#mouseClicked" prefHeight="110.0" prefWidth="130.0" spacing="2.0">
+					<children>
+						<Label fx:id="lViewInformation" styleClass="icons" />
+						<Label layoutX="10.0" layoutY="10.0" text="View Information" textFill="WHITE" />
+					</children>
+				</VBox>
+				<VBox fx:id="vboxSetting" alignment="CENTER" layoutX="350.0" layoutY="10.0" onMouseClicked="#mouseClicked" prefHeight="110.0" prefWidth="130.0" spacing="2.0">
+					<children>
+						<Label fx:id="lSettings" styleClass="icons" />
+						<Label layoutX="10.0" layoutY="10.0" text="Settings" textFill="WHITE" />
+					</children>
+				</VBox>
+			</children>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</HBox>
+	</top>
+	<bottom>
+		<HBox styleClass="StatusPanel" BorderPane.alignment="CENTER">
+			<children>
+				<Label text="Good Morning Sayama !" textFill="#fcf5f5">
+					<HBox.margin>
+						<Insets left="5.0" />
+					</HBox.margin>
+				</Label>
+			</children>
+		</HBox>
+	</bottom>
+	<stylesheets>
+		<URL value="@application.css" />
+		<URL value="@icon_blue.css" />
+	</stylesheets>
+</BorderPane>
